@@ -11,22 +11,13 @@ using namespace std;
 int main()
 {
 	int i = 0;
-	cout << "Zahl eigeben:" << endl;
-	cin >> i;
+	int j = 2;
 
-	switch (i)
-	{
-	case 0:
-	case 1:
-	case 2:
-		cout << i << endl;
-		break;
-	default:
-		cout << "n>2";
-		break;
-
-	}
-
+	i = j++;
+	
+	cout << i << "\n" << j;
+	
+	
     return 0;
 }
 
