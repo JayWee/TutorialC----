@@ -10,23 +10,22 @@ using namespace std;
 
 int main()
 {
-	int iBase, n = 0;
-	int iCalculate = 1;
-	
-	cout << "Zahl eingeben:" << endl;
-	cin >> iBase;
+	int i = 0;
+	cout << "Zahl eigeben:" << endl;
+	cin >> i;
 
-	cout << "Potenz:" << endl;
-	cin >> n;
+	switch (i)
+	{
+	case 0:
+	case 1:
+	case 2:
+		cout << i << endl;
+		break;
+	default:
+		cout << "n>2";
+		break;
 
-	for (int i = 0; i < n;i = i + 1)
-		iCalculate = iCalculate * iBase;
-
-	cout << "\n\n" << iBase << "hoch" << n << "=" << iCalculate << "\n\n" <<endl;
-
-	cin.clear();
-	cin.ignore(cin.rdbuf()->in_avail());
-	cin.get();
+	}
 
     return 0;
 }
