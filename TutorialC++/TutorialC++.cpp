@@ -10,12 +10,10 @@ using namespace std;
 
 int main()
 {
-	int i = 0;
-	int j = 2;
+	float fTest = 21.9593262f;
+	int iTest = static_cast<int> (fTest);
 
-	i = j++;
-	
-	cout << i << "\n" << j;
+	cout << iTest;
 	
 	
     return 0;
