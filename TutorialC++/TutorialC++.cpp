@@ -10,19 +10,23 @@ using namespace std;
 
 int main()
 {
-	int iLoop = 1;
+	int iBase, n = 0;
+	int iCalculate = 1;
+	
+	cout << "Zahl eingeben:" << endl;
+	cin >> iBase;
 
-	while (iLoop)
-	{
-		int a;
-		cout << "Zahl eingeben:" << endl;
-		cin >> a;
-		cout << "int:" << sizeof(int) << endl;
-		cout << "char:" << sizeof(char) << endl;
-		cout << "double" << sizeof(double) << endl;
-		cout << "a:" << a << endl;
-		cin >> iLoop;
-	}
+	cout << "Potenz:" << endl;
+	cin >> n;
+
+	for (int i = 0; i < n;i = i + 1)
+		iCalculate = iCalculate * iBase;
+
+	cout << "\n\n" << iBase << "hoch" << n << "=" << iCalculate << "\n\n" <<endl;
+
+	cin.clear();
+	cin.ignore(cin.rdbuf()->in_avail());
+	cin.get();
 
     return 0;
 }
