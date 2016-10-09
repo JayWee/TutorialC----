@@ -45,11 +45,13 @@ int main()
 	cout << "Gegner Nummer " << i << " hat " << iGegner[k][0] << " HP" << endl;
 	cout << "Team Nummer " << j << " hat " << iTeam[l][0] << " HP" << endl;
 
-	//iHPGegner = iGegner[3][0] - iTeam[5][2];
-	//iHPTeam = iTeam[5][0] - iGegner[3][2];
+	cout << "Beide Spieler Kämpfen gegeneinander" << endl;
 
-	//cout << "Gegner Nummer " << i << " hat noch " << iHPGegner << "HP" << endl;
-	//cout << "Gegner Nummer " << j << " hat noch " << iHPTeam << "HP" << endl;
+	iGegner[k][0] = iGegner[k][0] - iTeam[l][2];
+	iTeam[l][0] = iTeam[l][0] - iGegner[k][2];
+
+	cout << "Gegner Nummer " << i << " hat noch " << iGegner[k][0] << "HP" << endl;
+	cout << "Team Nummer " << j << " hat noch " << iTeam[l][0] << "HP" << endl;
 
 	cin.clear();
 	cin.ignore(cin.rdbuf()->in_avail());
